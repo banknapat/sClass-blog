@@ -1,11 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Blog</title>
 </head>
+
 <body>
-    index หน้าเว็บไซต์แรก
+  <!-- Secion Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/image/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        รับทำเว็บไซต์
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey"
+        aria-controls="navbarKey" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarKey">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secion Carousel -->
+  <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-img"
+          style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njd8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+          <div class="carousel-caption">
+            <h1 class="display-4 font-weight-bold">Hrader Slide 1</h1>
+            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus vero quam hic!
+              Architecto, reprehenderit quibusdam excepturi autem saepe non qui earum dolor quae perspiciatis, animi
+              provident exercitationem aliquid commodi similique.</p>
+          </div>
+          <div class="backscreen"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img"
+          style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');">
+          <div class="carousel-caption">
+            <h1 class="display-4 font-weight-bold">Hrader Slide 2</h1>
+            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus vero quam hic!
+              Architecto, reprehenderit quibusdam excepturi autem saepe non qui earum dolor quae perspiciatis, animi
+              provident exercitationem aliquid commodi similique.</p>
+          </div>
+          <div class="backscreen"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-img"
+          style="background-image: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzh8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60');">
+          <div class="carousel-caption">
+            <h1 class="display-4 font-weight-bold">Hrader Slide 3</h1>
+            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus vero quam hic!
+              Architecto, reprehenderit quibusdam excepturi autem saepe non qui earum dolor quae perspiciatis, animi
+              provident exercitationem aliquid commodi similique.</p>
+          </div>
+          <div class="backscreen"></div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </section>
+
+  <!-- Secion Hope -->
+  <section class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="border-short-boottom">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent Lorem ipsum
+        dolor sit,
+        amet consectetur adipisicing elit. Sunt vero illo asperiores animi, incidunt unde accusantium nihil nemo
+        dolorum. Sapiente eum perspiciatis quasi saepe ullam numquam odio,
+        sint accusamus ipsa.</p>
+    </div>
+  </section>
+
+  <!-- Secion Blog -->
+  <section class="container">
+    <h1 class="border-short-boottom text-center">บทความ Blog</h1>
+    <div class="row">
+      <section class="col-12 col-sm-6 col-md-4 p-2">
+        <div class="card h-100">
+          <a href="#" class="warpper-card-img"><img src="assets/image/blog/image1.jfif" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <div class="p-3">
+            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-12 col-sm-6 col-md-4 p-2">
+        <div class="card h-100">
+          <a href="#" class="warpper-card-img"><img src="assets/image/blog/image2.jfif" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <div class="p-3">
+            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-12 col-sm-6 col-md-4 p-2">
+        <div class="card h-100">
+          <a href="#" class="warpper-card-img"><img src="assets/image/blog/image3.jfif" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <div class="p-3">
+            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-12 col-sm-6 col-md-4 p-2">
+        <div class="card h-100">
+          <a href="#" class="warpper-card-img"><img src="assets/image/blog/image4.jfif" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <div class="p-3">
+            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-12 col-sm-6 col-md-4 p-2">
+        <div class="card h-100">
+          <a href="#" class="warpper-card-img"><img src="assets/image/blog/image5.jfif" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <div class="p-3">
+            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-12 col-sm-6 col-md-4 p-2">
+        <div class="card h-100">
+          <a href="#" class="warpper-card-img"><img src="assets/image/blog/image6.jfif" class="card-img-top"
+              alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <div class="p-3">
+            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Secion Footer -->
+  <footer class="semi-footer p-5 text-center text-md-left">
+    <div class="row">
+      <div class="col-md-4">
+        <a class="navbar-brand" href="#">
+          <img src="assets/image/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""
+            loading="lazy">
+          รับทำเว็บไซต์
+        </a>
+        <p><i class="fas fa-phone-square-alt"></i> 091-550-0997<br>
+          <i class="fas fa-envelope"></i> email@rmail.com<br>
+          <i class="far fa-address-card"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>
+        </p>
+        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a>
+      </div>
+      <div class="col-md-4">
+        <h4>เมนู</h4>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>แผนที่</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15497.8440540763!2d100.7096531!3d13.8113334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe16e86a6b3b6e75!2sYUSHI%20GROUP%20CO.%2CLTD.!5e0!3m2!1sth!2sth!4v1610686647181!5m2!1sth!2sth"
+          width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer">
+    <span>copyright © 2021 <a href="http://" target="_blank" rel="noopener noreferrer">myWeb</a>
+      ALL Right Reserved
+    </span>
+  </footer>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 </body>
+
 </html>
