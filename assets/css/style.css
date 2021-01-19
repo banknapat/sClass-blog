@@ -10,6 +10,7 @@
 7. Secion Timeline
 8. Secion Star
 
+
 */
 
 /* 1. Section Settings */
@@ -78,7 +79,12 @@ html, body {
 }
 
 .warpper-card-img img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+.btn-group-custom button {
+    width: 140px;
+    margin-bottom: 0.5rem;
 }
 
 /* 4. Section Footer  */
@@ -234,7 +240,10 @@ li.inverted .timeline-card {
     }
     .timeline-arrow {
         text-align: left;
-        left: 35px;
+        left: 0;
+    }
+    .timeline-arrow > i{
+        margin-left: 32px;
     }
 }
 
