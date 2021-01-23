@@ -32,10 +32,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -46,7 +46,7 @@
     <!-- Secion Page-title -->
     <!-- Alternate: Background Image Parallax -->
     <header data-jarallax data-speed="0.6" class="page-title jarallax"
-        style="background-image: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');">
+        style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80');">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -61,124 +61,73 @@
         </div>
     </header>
 
-    <!-- Secion Blog -->
+    <!-- Secion Contact -->
     <section class="container py-5">
-        <div class="row pb-4">
-            <div class="col-12 text-center">
-                <div class="btn-group-custom">
-                    <a href="blog.html?tag=all">
-                    <button class="btn btn-primary active">Some</button></a>
-                    <button class="btn btn-primary">quick</button>
-                    <button class="btn btn-primary">Lorem</button>
-                    <button class="btn btn-primary">example</button>
-                    <button class="btn btn-primary">build</button>
-                    <button class="btn btn-primary">title</button>
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="border-short-bottom">รายละเอียด</h2>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-address-card py-2 fa-4x text-info" aria-hidden="true"></i>
+                        <h4 class="card-title">ที่อยู่</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-phone-square py-2 fa-4x text-info" aria-hidden="true"></i>
+                        <h4 class="card-title">เบอร์โทรศัพท์</h4>
+                        <p class="card-text">012-345-6789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa fa-envelope py-2 fa-4x text-info" aria-hidden="true"></i>
+                        <h4 class="card-title">อีเมล</h4>
+                        <p class="card-text">email@email.com</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Secion Blog -->
         <div class="row">
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="blog-detail.html?id=001" class="warpper-card-img"><img src="assets/image/blog/image1.jfif" class="card-img-top"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="blog-detail.html?id=001" class="btn btn-primary btn-block">Go somewhere</a>
-                    </div>
+            <div class="col-12">
+                <div class="card-body">
+                    <h5 class="card-title">แบบฟอร์มติดต่อเรา</h5>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="name">ชื่อ</label>
+                                <input type="text" id="name" class="form-control" placeholder="ชื่อของคุณ">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="phone">เบอร์โทรศัพท์</label>
+                                <input type="text" id="phone" class="form-control" placeholder="เบอร์โทรศัพท์ของคุณ">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="email">อีเมล</label>
+                                <input type="text" id="email" class="form-control" placeholder="example@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">ข้อความของคุณ</label>
+                            <textarea id="message" rows="5" class="form-control" placeholder="เขียนข้อความของคุณที่นี้"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-block mx-auto">ส่งข้อความ</button>
+                    </form>
                 </div>
-            </section>
-
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img"><img src="assets/image/blog/image2.jfif" class="card-img-top"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img"><img src="assets/image/blog/image3.jfif" class="card-img-top"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img"><img src="assets/image/blog/image4.jfif" class="card-img-top"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img"><img src="assets/image/blog/image5.jfif" class="card-img-top"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img"><img src="assets/image/blog/image6.jfif" class="card-img-top"
-                            alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
     </section>
 
     <!-- Secion About -->
     <section class="jarallax position-relative py-5 " data-jarallax data-speed="0.6"
-        style="background-image: url('https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');">
+        style="background-image: url('https://images.unsplash.com/photo-1460794418188-1bb7dba2720d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">

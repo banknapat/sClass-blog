@@ -24,13 +24,13 @@ html, body {
     background: rgba(0,0,0,0.5);
 }
 
-.border-short-boottom {
+.border-short-bottom {
     position: relative;
     padding: 20px 0;
     margin-bottom: 25px;
 }
 
-.border-short-boottom::after {
+.border-short-bottom::after {
     position: absolute;
     content: "";
     width: 100px;
